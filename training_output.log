@@ -1,0 +1,257 @@
+/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py:56: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df['koi_disposition_raw'] = dispo.map(mapping).fillna('unknown').values
+/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py:57: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df['target_label'] = df['koi_disposition_raw'].map({'confirmed':2,'candidate':1,'false_positive':0,'unknown':-1})
+/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[c + '_log1p'] = np.log1p(arr + shift)
+/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[c + '_log1p'] = np.log1p(arr + shift)
+/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[c + '_log1p'] = np.log1p(arr + shift)
+/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[c + '_log1p'] = np.log1p(arr + shift)
+/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[c + '_log1p'] = np.log1p(arr + shift)
+/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[c + '_log1p'] = np.log1p(arr + shift)
+/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[c + '_log1p'] = np.log1p(arr + shift)
+Leyendo: data/raw/cumulativeKEPLER.csv
+Guardado preprocesado en: data/processed/kepler_clean.csv
+Cargando: data/processed/kepler_clean.csv
+Guardado features en: data/processed/kepler_features.csv
+/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+Cargando: data/processed/kepler_features.csv
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001815 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 24649
+[LightGBM] [Info] Number of data points in the train set: 6376, number of used features: 110
+[LightGBM] [Info] Start training from score -0.672349
+[LightGBM] [Info] Start training from score -1.573395
+[LightGBM] [Info] Start training from score -1.265310
+Fold 1 report:\n               precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      1584
+           1       0.89      0.85      0.87       657
+           2       0.90      0.93      0.92       947
+
+    accuracy                           0.94      3188
+   macro avg       0.93      0.92      0.93      3188
+weighted avg       0.94      0.94      0.94      3188
+
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002011 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 24640
+[LightGBM] [Info] Number of data points in the train set: 6376, number of used features: 110
+[LightGBM] [Info] Start training from score -0.685025
+[LightGBM] [Info] Start training from score -1.577185
+[LightGBM] [Info] Start training from score -1.240062
+Fold 2 report:\n               precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      1625
+           1       0.90      0.83      0.86       662
+           2       0.89      0.94      0.91       901
+
+    accuracy                           0.94      3188
+   macro avg       0.93      0.92      0.92      3188
+weighted avg       0.94      0.94      0.94      3188
+
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.007819 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 24597
+[LightGBM] [Info] Number of data points in the train set: 6376, number of used features: 110
+[LightGBM] [Info] Start training from score -0.686582
+[LightGBM] [Info] Start training from score -1.575667
+[LightGBM] [Info] Start training from score -1.238437
+Fold 3 report:\n               precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99      1630
+           1       0.88      0.86      0.87       660
+           2       0.90      0.93      0.92       898
+
+    accuracy                           0.95      3188
+   macro avg       0.93      0.93      0.93      3188
+weighted avg       0.95      0.95      0.95      3188
+
+Modelo guardado en: models/exoplanet_model_kepler.joblib
+Leyendo: data/raw/cumulativeTOI.csv
+Traceback (most recent call last):
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py", line 90, in <module>
+    main(inp, outp)
+    ~~~~^^^^^^^^^^^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py", line 76, in main
+    raise RuntimeError("No pude detectar inicio de tabla. Revisa el CSV.")
+RuntimeError: No pude detectar inicio de tabla. Revisa el CSV.
+Cargando: data/processed/tess_clean.csv
+Traceback (most recent call last):
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/src/feature_engineering.py", line 46, in <module>
+    main(inp, outp)
+    ~~~~^^^^^^^^^^^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/src/feature_engineering.py", line 36, in main
+    df = pd.read_csv(in_csv)
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/processed/tess_clean.csv'
+Cargando: data/processed/tess_features.csv
+Traceback (most recent call last):
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/src/model.py", line 58, in <module>
+    train(inp, out)
+    ~~~~~^^^^^^^^^^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/src/model.py", line 17, in train
+    df = pd.read_csv(in_csv)
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/processed/tess_features.csv'
+Leyendo: data/raw/cumulativeK2.csv
+Traceback (most recent call last):
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py", line 90, in <module>
+    main(inp, outp)
+    ~~~~^^^^^^^^^^^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/src/preprocessing.py", line 76, in main
+    raise RuntimeError("No pude detectar inicio de tabla. Revisa el CSV.")
+RuntimeError: No pude detectar inicio de tabla. Revisa el CSV.
+Cargando: data/processed/k2_clean.csv
+Traceback (most recent call last):
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/src/feature_engineering.py", line 46, in <module>
+    main(inp, outp)
+    ~~~~^^^^^^^^^^^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/src/feature_engineering.py", line 36, in main
+    df = pd.read_csv(in_csv)
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/processed/k2_clean.csv'
+Cargando: data/processed/k2_features.csv
+Traceback (most recent call last):
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/src/model.py", line 58, in <module>
+    train(inp, out)
+    ~~~~~^^^^^^^^^^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/src/model.py", line 17, in train
+    df = pd.read_csv(in_csv)
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/orozco/Github/nasa/nasaspaceappschallenge/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/processed/k2_features.csv'
+
+============================================================
+🚀 Entrenando modelo para KEPLER
+============================================================
+
+⚙️  Preprocesando KEPLER...
+⚙️  Generando características...
+🤖 Entrenando modelo...
+
+✅ Modelo de KEPLER completado!
+
+
+============================================================
+🚀 Entrenando modelo para TESS
+============================================================
+
+⚙️  Preprocesando TESS...
+⚙️  Generando características...
+🤖 Entrenando modelo...
+
+✅ Modelo de TESS completado!
+
+
+============================================================
+🚀 Entrenando modelo para K2
+============================================================
+
+⚙️  Preprocesando K2...
+⚙️  Generando características...
+🤖 Entrenando modelo...
+
+✅ Modelo de K2 completado!
+
+
+🎉 ¡Todos los modelos entrenados exitosamente!
+
