@@ -2,7 +2,7 @@
 
 Detector de exoplanetas usando Machine Learning con modelos especializados para las misiones **KEPLER**, **TESS** y **K2**.
 
-**Desarrollado por:** Equipo NoLit Developers
+**Desarrollado por:** [Equipo NoLit Developers](https://github.com/NoLit-Developers)
 
 ---
 
@@ -301,7 +301,7 @@ Modelo con alta precisión para objetos confirmados de la misión K2.
 
 ## 🤝 Contribuciones
 
-Este proyecto fue desarrollado para el **NASA Space Apps Challenge 2025** por el equipo **NoLit Developers**.
+Este proyecto fue desarrollado para el **NASA Space Apps Challenge 2025** por el [**NoLit Developers**](https://github.com/NoLit-Developers).
 
 ---
 
@@ -320,4 +320,4 @@ Este proyecto está desarrollado con fines educativos para el NASA Space Apps Ch
 
 ---
 
-**🚀 Desarrollado para NASA Space Apps Challenge 2025 | Equipo: NoLit Developers**
+**🚀 Desarrollado para NASA Space Apps Challenge 2025 | [Equipo NoLit Developers](https://github.com/NoLit-Developers)**
