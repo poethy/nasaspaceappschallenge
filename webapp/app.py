@@ -687,3 +687,5 @@ with col2:
 # Footer
 st.markdown("---")
 st.markdown("**🚀 Desarrollado para NASA Space Apps Challenge 2025 | Equipo: NoLit Developers**")
+st.markdown("---")
+st.link_button("🔙 Volver al Portal Principal", "https://06067336e270.ngrok-free.app/")
